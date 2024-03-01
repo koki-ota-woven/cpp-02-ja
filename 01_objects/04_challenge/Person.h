@@ -2,16 +2,13 @@
 // Created by koki-ota on 24/02/29.
 //
 
-#ifndef CPP_02_JA_PERSON_H
-#define CPP_02_JA_PERSON_H
-
+#pragma once
+#include <string>
 
 class Person {
     public:
         Person(std::string name);
+        std::string get_name() const;
     private:
         std::string name;
 };
-
-
-#endif //CPP_02_JA_PERSON_H

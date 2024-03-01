@@ -2,16 +2,16 @@
 // Created by koki-ota on 24/02/29.
 //
 
-#ifndef CPP_02_JA_TEAM_H
-#define CPP_02_JA_TEAM_H
+#pragma once
 
+#include <vector>
+#include "./Person.h"
 
 class Team {
     public:
-        void add_member();
+        Team();
+        void add_member(const Person& person);
+        std::vector<Person> get_members() const;
     private:
-        std::vector<Person>;
+        std::vector<Person> members;
 };
-
-
-#endif //CPP_02_JA_TEAM_H
