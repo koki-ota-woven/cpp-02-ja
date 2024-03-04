@@ -1,3 +1,5 @@
+#pragma once
+#include "./driver.hpp"
 #include <string>
 
 class Car {
@@ -11,6 +13,9 @@ public:
     int getYear() const;
     double getPrice() const;
 
+    void setDriver(Driver* driver) ;
+    Driver* getDriver() const;
+
     void displayInfo() const;
 
 private:
@@ -20,4 +25,6 @@ private:
     std::string model;
     int year;
     double price;
+
+    Driver* driver;
 };
