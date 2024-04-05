@@ -1,9 +1,11 @@
 #pragma once
+#include <string>
+
 
 class Tire {
 public:
-    Tire(float size, std::string type) : size(size), type(type);
-    void print_tire(float& size, std::string& type) const;
+    Tire(float size, std::string type);
+    void display_info() const;
 private:
     float size;
     std::string type;
